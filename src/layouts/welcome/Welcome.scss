@@ -1,0 +1,99 @@
+@import "../../scss/main";
+
+/* Welcome */
+.welcome {
+  background-image: url("../../assets/bg-mob.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $bgcolor-primary;
+  width: 100vw;
+  height: 100vh;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    .main__heading {
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        color: $color-text-primary;
+      }
+      p {
+        font-size: 1.625rem;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        color: $color-text-primary;
+      }
+    }
+    button {
+      padding: 15px 40px;
+      font-size: 20px;
+      font-weight: 400;
+      color: $color-text-secondary;
+      background: none;
+      border: 2px solid $color-text-secondary;
+      width: 100%;
+      &:hover {
+        color: white;
+        background: $color-text-secondary;
+        cursor: pointer;
+      }
+    }
+  }
+  &__footer {
+    .welcome--copyright {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 1px solid $color-text-primary;
+      width: 100%;
+      padding-top: 10px;
+      p {
+        font-size: 0.75rem;
+      }
+      .copyright__logo {
+        width: 60px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 448px) {
+  .welcome {
+    background-image: url("../../assets/bg.jpg");
+    &__main {
+      .main__heading {
+        h1 {
+          font-size: 3.75rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+      button {
+        width: fit-content;
+      }
+    }
+    &__footer {
+      .welcome--copyright {
+        .copyright__logo {
+          width: 80px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .welcome {
+    &__main {
+      button {
+        width: fit-content;
+      }
+    }
+  }
+}
