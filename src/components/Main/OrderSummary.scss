@@ -1,0 +1,57 @@
+@import "../../scss/main";
+
+.orderSummary {
+  padding: 0 10px;
+  form {
+    display: flex;
+    width: 100%;
+    input,
+    textarea {
+      font-size: 0.75rem;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+    }
+    .orderSummary__container {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      .orderSummary__title {
+        text-decoration: underline;
+        font-size: 1rem;
+        margin: 20px 0;
+      }
+      p {
+        font-size: 0.75rem;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: $color-text-secondary;
+        background: none;
+        border: 2px solid $color-text-secondary;
+        // width: fit-content;
+        width: 100%;
+        &:hover {
+          color: white;
+          background: $color-text-secondary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    // .orderSummary__container {
+    //   // width: 50%;
+    // }
+  }
+}

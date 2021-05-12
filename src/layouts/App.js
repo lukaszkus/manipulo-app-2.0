@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import Welcome from '../layouts/welcome/Welcome';
-// import Dashboard from './Dashboard/Dashboard';
+import Dashboard from './dashboard/Dashboard';
 
 function App() {
   const [change, setChange] = useState(false);
@@ -12,8 +12,7 @@ function App() {
 
   return (
     <>
-      {/* {change ? <Dashboard /> : <Welcome click={ handleChange } /> } */}
-      {change ? <h1>1</h1> : <Welcome click={ handleChange } /> }
+      {change ? <Dashboard /> : <Welcome click={ handleChange } /> }
     </>
   );
 }

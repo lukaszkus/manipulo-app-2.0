@@ -50,9 +50,10 @@
   }
   .dashboard-grid {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
       "logo logo header header header header header header"
+      "sidebar sidebar main main main main main main"
       "sidebar sidebar main main main main main main"
       "sidebar sidebar main main main main main main"
       "sidebar sidebar main main main main main main"

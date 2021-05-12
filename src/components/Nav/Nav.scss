@@ -1,0 +1,36 @@
+@import "../../scss/main";
+
+/* Nav */
+.dash__nav {
+  width: 100%;
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $color-text-secondary;
+      background: none;
+      border: 2px solid $color-text-secondary;
+      width: fit-content;
+      &:hover {
+        color: white;
+        background: $color-text-secondary;
+        cursor: pointer;
+      }
+    }
+    .btn-submit {
+      border: 2px solid red;
+      color: red;
+      &:hover {
+        color: white;
+        background: red;
+      }
+    }
+  }
+  .btn-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
