@@ -1,29 +1,11 @@
-@import "./variables";
-
-.logo {
-  grid-area: logo;
-  display: none;
-  background-color: $bgcolor-secondary;
-  padding: 10px;
-}
 .header {
   grid-area: header;
-}
-.sidebar {
-  grid-area: sidebar;
-  display: none;
-}
-.price {
-  grid-area: price;
 }
 .main {
   grid-area: main;
 }
 .footer {
   grid-area: footer;
-}
-.nav {
-  grid-area: nav;
 }
 
 .welcome-grid {
@@ -37,18 +19,4 @@
     "footer";
   grid-gap: 10px;
   padding: 20px;
-}
-
-@media (min-width: 540px) {
-  .logo,
-  .sidebar {
-    display: block;
-  }
-}
-
-@media (min-width: 1024px) {
-  .welcome-grid {
-    grid-gap: 10px;
-    padding: 20px;
-  }
 }

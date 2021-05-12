@@ -2,27 +2,24 @@ import React from 'react';
 import './Welcome.scss';
 import logo from '../../assets/logo_mb.svg';
 
-
 function Welcome({ click }) {
   return (
     <div className="welcome">
-      <div className="container">
-        <div className="welcome-grid animate">
-          <div className="welcome__header"></div>
-          <div className="welcome__main">
-            <div className="main__heading">
-              <h1>Witaj</h1>
-              <p>Skonfiguruj i zamów swoją tablicę manipulacyjną.</p>
+      <div className="container welcome-grid animate">
+          {/* <div className="header"></div> */}
+          <div className="main">
+            <div className="heading">
+              <h1 className="heading__title">Witaj</h1>
+              <p className="heading__slogan">Skonfiguruj i zamów swoją tablicę manipulacyjną.</p>
             </div>
-            <button onClick={ click }>ROZPOCZNIJ</button>
+            <button className="main__btn" onClick={ click }>ROZPOCZNIJ</button>
           </div>
-          <div className="welcome__footer">
-            <div className="welcome--copyright">
-              <p>Copyright &copy;</p>
-              <a href="https://www.manipuloboards.pl"><img src={ logo } alt="Logo" className="copyright__logo" /></a>
-            </div>
+          <div className="footer">
+            <p className="footer__copy-txt">Copyright &copy;</p>
+            <a className="footer__copy-link" href="https://www.manipuloboards.pl">
+              <img className="footer__copy-img" src={ logo } alt="Logo" />
+            </a>
           </div>
-        </div>
       </div>
     </div>
   );
